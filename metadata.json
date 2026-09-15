@@ -1,0 +1,6 @@
+{
+  "name": "Esthetic Dental Care",
+  "description": "Esthetic Dental Care is a professional dental clinic in Netaji Nagar, Kolkata, providing patient-focused dental care in a comfortable and welcoming environment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

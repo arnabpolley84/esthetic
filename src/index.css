@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #12161A;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-bengali {
+  font-family: 'Noto Sans Bengali', system-ui, sans-serif;
+}
+
+/* Custom cinematic gradient overlays for hero: Dark Left -> Seamless Gradual Transition -> Bright Natural Image Right */
+.hero-gradient-cinematic {
+  background: linear-gradient(
+    90deg,
+    #0A0E0C 0%,
+    #0A0E0C 36%,
+    rgba(10, 14, 12, 0.92) 48%,
+    rgba(10, 14, 12, 0.60) 64%,
+    rgba(10, 14, 12, 0.15) 82%,
+    rgba(10, 14, 12, 0) 100%
+  );
+}
+
+@media (max-width: 768px) {
+  .hero-gradient-cinematic {
+    background: linear-gradient(
+      180deg,
+      rgba(10, 14, 12, 0.45) 0%,
+      rgba(10, 14, 12, 0.70) 30%,
+      rgba(10, 14, 12, 0.92) 55%,
+      #0A0E0C 85%,
+      #0A0E0C 100%
+    );
+  }
+}
+
+/* Smooth typing cursor animation */
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-cursor-blink {
+  animation: blink-cursor 0.9s infinite;
+}
